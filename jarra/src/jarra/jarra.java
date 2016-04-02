@@ -27,6 +27,16 @@ public class jarra {//variables de instancia
 		this.cantidad=0;
 	}
              // 3
+        public void llenaDesde(jarra j){
+		while((this.cantidad<this.capacidad)&&(j.cantidad>0)){
+			this.cantidad++;
+			j.cantidad--;
+		} 
+	
+	public String toString(){
+		return ("("+this.capacidad+","+this.cantidad+")");
+	}
+
         public void metodoComunitario(){ 
 // Comentario incluido para pruebas 
            System.out.println("Aqui escribimos todos");
